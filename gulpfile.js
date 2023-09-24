@@ -113,7 +113,7 @@ function video() {
 
 // Спрайт для векторной графики
 function svgsprite() {
-    return src('src/svg/src/**/*')
+    return src('src/svg/src/stack/*.svg')
         .pipe(sprite({
             shape: {
                 dimension: {
@@ -176,4 +176,4 @@ exports.fonts = fonts;
 exports.svgsprite = svgsprite;
 exports.video = video;
 
-exports.default = parallel(style, html, scripts, fonts, cleanFonts, svgsprite, images, video, cleanImg, browsersync, startWatch);
+exports.default = parallel(style, html, scripts, fonts, cleanFonts, images, video, cleanImg, browsersync, startWatch);

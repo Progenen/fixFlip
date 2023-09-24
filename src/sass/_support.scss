@@ -38,6 +38,9 @@
 		src: $src;
 	}
 }
+// Переменнные | _support
+$fontSize: 16;
+$vw: 1920;
 
 // Перевод из px в rem
 @function rem($size) {
@@ -49,16 +52,19 @@
 	@return calc($size / $vw) + vw;
 }
 
-// Переменнные | _support
-$fontSize: 16;
-$vw: 1920;
 
 // Переменные | Глобальные
-$color1: #ff0000;
+$blue: #00B9BB;
+$black: #042323;
 
 
 // Fonts
-// @include font-face('Example', '../fonts/Example/Example-Bold', 700, normal, ttf);
+@include font-face('Actay-Wide', '../fonts/Actay/ActayWide-Bold', 700, normal, otf);
+@include font-face('Museo-Sans', '../fonts/MuseoSans/museosanscyrl-100', 100, normal, ttf);
+@include font-face('Museo-Sans', '../fonts/MuseoSans/museosanscyrl-300', 300, normal, ttf);
+@include font-face('Museo-Sans', '../fonts/MuseoSans/museosanscyrl-500', 500, normal, ttf);
+@include font-face('Museo-Sans', '../fonts/MuseoSans/museosanscyrl-700', 700, normal, ttf);
+@include font-face('Museo-Sans', '../fonts/MuseoSans/museosanscyrl-900', 900, normal, ttf);
 
 // Vars
 

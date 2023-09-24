@@ -1,0 +1,63 @@
+.header {
+    background-color: #151B23;
+    padding: 29px 0 26px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    &__row {
+        align-items: center;
+    }
+
+    &__col {
+
+        &--left {
+            width: 43.4%;
+        }
+
+        &--center {
+            width: 17.78%;
+        }
+
+        &--right {
+            width: 43.4%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &--burger {
+            display: none;
+        }
+    }
+
+    &__motto {
+        font-size: 14px;
+        max-width: 204px;
+        line-height: 18.2px;
+        width: 100%;
+        color: rgba($color: #fff, $alpha: .6)
+    }
+
+    &__logo {
+        max-width: 217px;
+        min-width: 154px;
+        max-height: 44px;
+        min-width: 190px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__contacts {
+    }
+
+    &__phone {
+    }
+
+    &__call {
+    }
+}
