@@ -66,8 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         insertAfter(cardsSection, offerSection);
     }
 
-    if (window.innerWidth <= 450) {;
-
-        document.querySelector(".offer .row").append(document.querySelector(".offer__dominates-item"))
+    if (window.innerWidth <= 620) {;
+        document.querySelector(".offer .row").append(document.querySelector(".offer__dominates-item--1"))
     }
 });
