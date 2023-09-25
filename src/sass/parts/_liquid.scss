@@ -1,0 +1,107 @@
+.liquid {
+
+    .row {
+    }
+
+    &__col {
+        &--left {
+            padding-top: 71px;
+            width: 50%;
+        }
+
+        &--right {
+            width: 50%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__card {
+    }
+
+    &__card-icon {
+    }
+
+    &__card-right {
+    }
+
+    &__card-title {
+    }
+
+    &__card-text {
+    }
+
+    &__antistress {
+    }
+
+    &__antistress-title {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 130%; /* 28.6px */
+        margin-top: 70px;
+    }
+
+    &__antistress-cards {
+        margin-top: 16px;
+    }
+
+    &__antistress-card {
+        margin-bottom: 21px;
+    }
+
+    &__right {
+    }
+
+    &__employee {
+    }
+
+    &__image {
+    }
+
+    &__employee-label {
+    }
+
+    &__employee-label-name {
+    }
+
+    &__employee-label-job {
+    }
+
+    &__employee-quote {
+    }
+}
+.container {
+}
+.row {
+}
+.section-title {
+}
+.icon-card {
+
+    &__img {
+    }
+
+    &__right {
+    }
+
+    &__text {
+    }
+}
+.icon {
+
+    &__card-title {
+    }
+}
+.label {
+
+    &__name {
+    }
+
+    &__job {
+    }
+}
+.card {
+}
