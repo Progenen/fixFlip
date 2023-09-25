@@ -195,3 +195,23 @@
         text-align: center;
     }
 }
+
+.offer-cards {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/graphics/shadow1.png');
+    position: relative;
+    padding-top: 31px;
+    padding-bottom: 20px;
+    &::after {
+        content: "";
+        top: -50%;
+        position: absolute;
+        width: 763px;
+        height: 497px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

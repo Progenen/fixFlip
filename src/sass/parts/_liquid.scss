@@ -1,6 +1,7 @@
 .liquid {
-
-    .row {
+    .container {
+        
+    position: relative;
     }
 
     &__col {
@@ -18,7 +19,8 @@
         margin-bottom: 40px;
     }
 
-    &__card {
+    &__card-title {
+        margin-left: 25px;
     }
 
     &__card-icon {
@@ -52,6 +54,12 @@
         margin-bottom: 21px;
     }
 
+    &__btn {
+        margin-top: 56px;
+        margin-left: 5px;
+
+    }
+
     &__right {
     }
 
@@ -59,18 +67,64 @@
     }
 
     &__image {
+        margin-left: -80px;
+        margin-top: 5px;
     }
 
     &__employee-label {
+        top: 243px;
+        right: 142px;
+        margin-left: auto;
+        position: absolute;
+        text-align: left;
     }
 
     &__employee-label-name {
+        font-size: 16.552px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        margin-bottom: 3px;
     }
 
     &__employee-label-job {
+        font-size: 12.655px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 130%; /* 16.451px */
     }
 
     &__employee-quote {
+        border-radius: 9px;
+        border: 1px solid #ffffff2a;
+        background: linear-gradient(123deg, rgba(19, 91, 96, 0.45) 4.49%, rgba(30, 85, 109, 0.45) 120.49%), rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(7.5px);
+        position: absolute;
+        padding: 35px 41px 33px 41px;
+        font-style: normal;
+        max-width: 473px;
+        line-height: 160%; /* 22.4px */
+        bottom: 36px;
+        right: 13px;
+        &::before {
+            content: "“";
+            left: 41px;
+            font-family: Actay-Wide;
+            margin-right: 21px;
+            font-weight: 700;
+            margin-top: -10px;
+            font-size: 101px;
+            color: rgba(255, 255, 255, 0.20);
+
+        }
+        &-text {
+            font-weight: 500;
+            line-height: 160%;
+            font-size: 14px;
+            strong {
+                font-weight: 900;
+            }
+        }
     }
 }
 .container {

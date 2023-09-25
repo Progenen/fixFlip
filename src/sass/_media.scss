@@ -119,10 +119,66 @@
             margin-right: 0;
         }
     }
+
+    .liquid {
+        &__employee-label {
+            right: 100px;
+            top: 200px;
+        }
+    }
 }
 
 @media (max-width:1020px){
+    .liquid {
+        .row {
+            flex-direction: column;
+        }
 
+        &__col {
+            width: 100%;
+            &--right {
+                position: relative;
+            }
+            &--left {
+                padding-top: 40px;
+                z-index: 1;
+            }
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__employee-quote {
+            position: static;
+            width: 100%;
+            margin-left: auto;
+        }
+
+        &__employee-label {    
+            right: 21px;
+            top: -250px;
+        }
+
+        &__image {
+            right: -80px;
+            margin-top: -441px;
+            z-index: 0;
+            position: absolute;
+            width: 626px;
+            height: 600px;
+            object-position: top center;
+            object-fit: cover;
+        }
+
+        &__btn {
+            display: none;
+        }
+    }
+
+    .navigate {
+        right: 10px;
+    }
 }
 
 @media (max-width:992px){
@@ -196,24 +252,13 @@
         }
 
         &__cards {
-            margin-top: 31px;
-            flex-wrap: wrap;
-            display: flex;
+            margin-top: 0;
         }
 
         &__cards-item {
             margin-left: 0;
             margin-right: 20px;
             margin-bottom: 0;
-            &:first-child {
-                margin-left: 0;
-            }
-            &:nth-child(2) {
-                margin-left: 0;
-            }
-            &:last-child {
-                margin-left: 0;
-            }
         
             
         }
@@ -317,79 +362,44 @@
         }
     }
 
-    // .offer {
+   .liquid {
+        &__image {
+            position: relative;
+            margin-top: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-    //     .row {
-    //         flex-direction: column-reverse;
-    //     }
+        &__img{
+            &::after {
+                content: "";
+                position: absolute;
+                width: 120%;
+                height: 501px;
+                background-image: url('../images/graphics/shadow2.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                bottom: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
 
-    //     &__col {
-    //         &--right {
-    //             align-items: flex-start;
-    //         }
-    //     }
+        &__employee-quote {
+            background: linear-gradient(123deg, rgba(19, 91, 96, 0.45) 4.49%, rgba(30, 85, 109, 0.45) 120.49%), rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(7.5px);
+            margin-top: -100px;
+            max-width: none;
+            &-text {
+                font-size: 19px;
+            }
+        }
 
-    //     &__titles {
-    //         font-size: 40px;
-    //         line-height: 119%; /* 33.32px */
-
-    //     }
-
-    //     &__img {
-    //         top: 56px;
-    //         right: -50px;
-    //     }
-
-    //     &__cards {
-    //         display: block;
-    //     }
-
-    //     &__cards-item {
-    //         margin-bottom: 21.5px;
-    //         &:nth-child(2) {
-    //             margin-left: 40px;
-    //         }
-    //         &:last-child {
-    //             margin-left: 80px;
-    //             margin-bottom: 0;
-    //         }
-
-    //         .icon-card__text {
-    //             font-size: 12px;
-    //         }
-    //     }
-
-    //     &__cards-text {
-    //     }
-
-    //     &__btn {
-    //         margin-top: 40px;
-    //     }
-
-    //     &__dominates {
-    //         display: flex;
-    //         flex-wrap: wrap;
-    //         margin-top: 30px;
-    //     }
-
-    //     &__dominates-item {
-    //         margin-top: 0;
-    //         width: fit-content;
-    //         top: initial;
-    //         position: static;
-    //         flex-direction: row;
-    //         &--1 {
-    //             margin-right: 20px;
-    //         }
-    //     }
-
-    //     &__dominates-item{
-    //         left: 0;
-    //     }
-
-        
-
-    // }
+        &__employee-label {
+            top: 20vw;
+        }
+   }
 
     .section-title {
         font-size: 28px;
@@ -656,6 +666,44 @@
 
     .section-title {
         font-size: 22px;
+    }
+
+    .liquid {
+        &__employee-quote {
+            padding-left: 16px;
+            padding-right: 18px;
+            margin-top: -30px;
+            &::before {
+                font-size: 90px;
+            }
+            &-text {
+                font-size: 12px;
+            }
+        }
+
+        &__employee-label {
+            top: 28vw;
+            right: 2vw;
+        }
+
+        &__employee-label-name {
+            font-size: 12px;
+        }
+
+        &__employee-label-job {
+            font-size: 8px;
+            
+        }
+
+        &__card-title .icon-card__text br:last-child {
+            content: " ";
+        }
+
+        &__employee-quote {
+            &::before {
+                margin-right: 9px;
+            }
+        }
     }
 }
 

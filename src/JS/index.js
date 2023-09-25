@@ -66,6 +66,10 @@ document.addEventListener('DOMContentLoaded', function () {
         insertAfter(cardsSection, offerSection);
     }
 
+    if (window.innerWidth <= 1020) {
+        document.querySelector(".liquid .liquid__col--right").append(document.querySelector(".liquid__btn"));
+    }
+
     if (window.innerWidth <= 620) {;
         document.querySelector(".offer .row").append(document.querySelector(".offer__dominates-item--1"))
     }

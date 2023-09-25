@@ -75,9 +75,12 @@ footer {
 .icon-card {
     display: flex;
     align-items: center;
+    font-size: 17px;
     &__img {
         width: 64px;
         height: 64.5px;
+        min-width: 55px;
+        min-height: 56px;
         margin-right: 20px;
         img {
             width: 100%;
@@ -85,13 +88,11 @@ footer {
         }
     }
 
-    &__title {
+    strong {
         font-weight: 900;
-        font-size: 17px;
     }
 
     &__text {
-        font-size: 16px;
         font-style: normal;
         font-weight: 300;
         line-height: 130%; /* 20.8px */
@@ -300,6 +301,7 @@ footer {
     position: fixed;
     right: 35px;
     top: 50%;
+    transform: translateY(-50%);
     z-index: 200;
     &__list {
         list-style: none;
