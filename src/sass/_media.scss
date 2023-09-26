@@ -115,8 +115,12 @@
         &__card {
             margin-bottom: 10px;
             width: 45%;
-            max-width: 45%;
-            margin-right: 20px;
+            max-width: 100%;
+            margin-right: 10px;
+        }
+
+        &__card-text br {
+            content: " ";
         }
 
         &__steps-item img{
@@ -199,7 +203,10 @@
         }
 
         &__employee-quote {
-            position: static;
+            position: relative;
+            left: initial;
+            bottom: initial;
+            right: initial;
             width: 100%;
             margin-left: auto;
         }
@@ -335,6 +342,8 @@
 
         &__cards {
             margin-top: 0;
+            z-index: 2;
+            position: relative;
         }
 
         &__cards-item {
@@ -417,8 +426,15 @@
 }
 
 @media (max-width:786px){
+
+    .navigate {
+        display: none;
+    }
+
     .header {
         padding: 9px 0;
+        position: fixed;
+        background: linear-gradient(113deg, #161A24 18.72%, #11141C 85%);
         &__col {
             &--left {
                 display: none;
@@ -445,6 +461,10 @@
     }
 
    .liquid {
+    background-size: cover;
+    &::after {
+        bottom: -20px;
+    }
         &__image {
             position: relative;
             margin-top: 0;
@@ -689,6 +709,14 @@
             &-text {
                 font-size: 12px;
             }
+        }
+
+        &__image {
+            width: 320px;
+            position: static;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         &__employee-label {
