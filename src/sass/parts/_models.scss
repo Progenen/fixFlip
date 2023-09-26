@@ -1,6 +1,10 @@
 .models {
-    margin-top: 70px;
-
+    padding-top: 15px;
+    background-image: url('../images/graphics/models-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 8px;
     &__title {
         text-align: center;
     }
