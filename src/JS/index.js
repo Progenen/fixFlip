@@ -44,10 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     offer.style.paddingTop = header.clientHeight + "px";
 
-    if (window.innerWidth <= 786) {
-        document.querySelector(".mobile-menu__contacts").append(document.querySelector(".navigate"));
-    }
-
     if (window.innerWidth <= 876) {
         const cardsSection =  document.createElement("section");
         const offerSection = document.querySelector(".offer");

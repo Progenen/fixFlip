@@ -417,7 +417,11 @@
 @media (max-width:786px){
 
     .navigate {
-        display: none;
+        &__link {
+            width: 40px;
+            height: 40px;
+
+        }
     }
 
     .header {
