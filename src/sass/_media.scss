@@ -44,12 +44,16 @@
 @media (max-width:1220px){
     .offer {
         &__img {
-            left: 40%;
+            left: 38vw;
+            img {
+                
+            width: 45vw;
+            }
         }
 
         &__titles {
             margin-left: 0;
-            font-size: 47px;
+            font-size: 4.6vw;
             text-align: left;
             justify-content: space-between;
         }
@@ -59,13 +63,6 @@
             display: block;
             width: 100%;
             padding: 31px 10px;
-        }
-
-        &__titles-item {
-            &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
-                margin-left: 0;
-                margin-right: 0;
-            }
         }
 
         &__col--right {
@@ -275,19 +272,12 @@
         &__img-name {
             left: 600px;
         }
-        &__titles {
-            margin-top: 10px;
-            position: static;
-            text-align: center;
-            justify-content: flex-start;
-        }
 
         &__titles-item {
             margin-right: 10px !important;
         }
 
         &__img {
-            top: 20px;
             right: -120px;
             img {
                 position: static;
@@ -336,7 +326,7 @@
             text-align: center;
             justify-content: center;
             flex-direction: column;
-            margin-top: 50px;
+            margin-top: 28px;
             font-size: 40px;
         }
 
