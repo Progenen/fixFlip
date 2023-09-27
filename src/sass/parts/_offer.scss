@@ -202,6 +202,7 @@
 .offer-cards {
     position: relative;
     padding-bottom: 20px;
+    overflow: hidden;
     &::after {
         content: "";
         position: absolute;
