@@ -13,11 +13,16 @@
         width: 100%;
         height: 487px;
         background-image: url('../images/graphics/team-shadow.png');
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center bottom;
         z-index: 3;
     }
+
+    &__row--persons {
+        justify-content: center;
+    }
+
     &__title {
         text-align: center;
         margin-top: 0;
@@ -52,7 +57,7 @@
     &__persons {
         display: flex;
         position: relative;
-        margin-top: 61px;
+        margin-top: 50.5px;
         img {
             z-index: 1;
             left: 0;
