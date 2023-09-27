@@ -85,6 +85,13 @@
         }
     }
 
+    .btn {
+        max-width: 363px;
+        display: block;
+        width: 100%;
+        padding: 31px 10px;
+    }
+
     .models {
         &__items {
         }
@@ -289,6 +296,21 @@
             margin-top: 80px;
         }
     }
+
+    .questions {
+        &__col {
+            &--left {
+                width: 60%;
+            }
+            &--right {
+                width: 40%;
+            }
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+    }
 }
 
 @media (max-width:876px){
@@ -412,6 +434,12 @@
     .section-title {
         font-size: 36px;
     }
+
+    .team {
+        &::after {
+            height: 228px;
+        }
+    }
 }
 
 @media (max-width:786px){
@@ -522,6 +550,46 @@
             margin-top: 24px;
         }
     }
+
+    .questions {
+        background-image: url("../images/graphics/questions-bg-mob.jpg");
+        padding: 30px 0 20px;
+        &::after {
+            display: none;
+        }
+
+        &__title {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        &__text {
+            text-align: center;
+            font-weight: 300;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        &__col {
+            &--left {
+                margin-top: 30px;
+                width: 100%;
+            }
+            
+            &--right {
+                display: none;
+            }
+        }
+
+        &__btn {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__card {
+            margin-left: 0 !important;
+        }
+    }
 }
 
 @media (max-width:620px){
@@ -628,6 +696,11 @@
 
     .btn {
         border-radius: 10px;
+        padding: 29.5px 10px;
+        font-size: 14px;
+        max-width: 277px;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 }
@@ -785,6 +858,9 @@
     }
 
     .team {
+        &::after {
+            bottom: -30px;
+        }
         &__persons {
             margin-top: 0;
         }
@@ -795,6 +871,7 @@
 
         &__card {
             max-width: 301px;
+            margin-bottom: 261px;
         }
 
         &__card-img {
@@ -813,10 +890,29 @@
         }
 
         &__persons {
+            position: absolute;
+            bottom: 0;
+            width: 426px;
+            left: 50%;
+            transform: translateX(-50%);
             img {
-                width: 426px;
-                margin-left: -8vw;
             }
+        }
+    }
+
+    .questions {
+        &__card-text br{
+            content: "";
+        }
+    }
+
+    .icon-card {
+        &__text {
+            
+        font-size: 12px;
+        }
+        &__img {
+            margin-right: 15px;
         }
     }
 }
@@ -872,13 +968,5 @@
         //     margin-top: 60px;
         //     margin-left: -20px;
         // }
-    }
-
-    .team {
-        &__persons {
-            img {
-                margin-left: -15vw;
-            }
-        }
     }
 }

@@ -1,5 +1,23 @@
 .team {
     padding-top: 45px;
+    background-image: url('../images/graphics/team-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 487px;
+        background-image: url('../images/graphics/team-shadow.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 3;
+    }
     &__title {
         text-align: center;
         margin-top: 0;
@@ -36,7 +54,6 @@
         position: relative;
         margin-top: 61px;
         img {
-            position: absolute;
             z-index: 1;
             left: 0;
         }
@@ -45,7 +62,7 @@
     &__employee-label {
         position: absolute;
         width: 132px;
-        z-index: 2;
+        z-index: 6;
         &--1 {
             top: 55px;
             left: 93px;

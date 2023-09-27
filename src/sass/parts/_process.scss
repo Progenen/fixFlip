@@ -120,7 +120,7 @@
         font-weight: 700;
         line-height: 130%; /* 62.833px */
         margin-right: 20px;
-        width: 69px;
+        min-width: 69px;
     }
 
     &__steps-title {
@@ -133,18 +133,19 @@
     }
 
     &__steps-item-content {
-        padding: 16px 0;
         max-width: 525px;
         width: 100%;
+        padding: 19px 0;
         margin-left: auto;
-        * + .proces__steps-list {
+        * + .process__steps-list {
             margin-top: 28px;
         }
     }
 
     &__steps-list {
         list-style: none;
-        padding-left: 0;
+        padding: 0;
+        margin: 0;
         max-width: 495px;
         width: 100%;
         margin-left: auto;
