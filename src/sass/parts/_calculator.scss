@@ -1,5 +1,9 @@
 .calculator {
     padding: 76px 0 35px;
+    background-image: url("../images/graphics/calculator-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     &__row {
     }
 
@@ -147,6 +151,15 @@
         font-style: normal;
         font-weight: 700;
         line-height: 130%; /* 26px */
+        &::after {
+            content:" руб.";
+            font-family: Actay-Wide;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 130%; /* 26px */
+
+        }
     }
 
     &__form-input {

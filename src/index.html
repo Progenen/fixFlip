@@ -32,7 +32,7 @@
             </li>
         </ul>
     </div>
-    <!-- <section class="offer">
+    <section class="offer">
         <div class="container">
             <div class="offer__absolute">
                 <div class="offer__titles">
@@ -446,6 +446,79 @@
             </div>
         </div>
     </section>
+    <section class="calculator">
+        <div class="container">
+            <div class="row calculator__row">
+                <div class="calculator__col calculator__col--left">
+                    <div class="calculator__title section-title">
+                        Рассчитайте годовую доходность <br/>
+                        и мы предложим лучшую стратегию инвестирования
+                    </div>
+                </div>
+                <div class="calculator__col calculator__col--right">
+                    <form class="calculator__form">
+                        <div class="calculator__content">
+                            <div class="calculator__form-title">
+                                Введите сумму инвестиций:
+                            </div>
+                            <div class="calculator__form-range">
+                                <div class="calculator__form-range-input" id="calcFormRange"></div>
+                                <div class="calculator__form-range-label">
+                                    <div class="calculator__form-rang-min">1 млн.</div>
+                                    <div class="calculator__form-rang-max">30 млн.</div>
+                                </div>
+                            </div>
+                            <div class="calculator__form-value-items">
+                                <div class="calculator__form-value-item">
+                                    <div class="calculator__form-value-label">Вы получите:</div>
+                                    <div class="calculator__form-value-res" id="calcFormRes1">
+                                        3 250 000 руб.
+                                    </div>
+                                </div>
+                                <div class="calculator__form-value-item">
+                                    <div class="calculator__form-value-label">Чистая прибыль:</div>
+                                    <div class="calculator__form-value-res" id="calcFormRes2">
+                                        1 250 000 руб.
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Введите ваш телефон" class="calculator__form-input" required>
+                            <div class="calculator__form-radio">
+                                <div class="calculator__form-radio-label">
+                                    Куда отправить стратегию?
+                                </div>
+                                <div class="calculator__form-radio-items">
+                                    <div class="calculator__form-radio-item ">
+                                        <input type="radio" id="calcFormWhats" name="contact" required>
+                                        <label class="btn-circle" for="calcFormWhats">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.7381 0C16.6689 0 21.4764 4.7979 21.4764 10.7168C21.4764 16.6357 16.6689 21.4336 10.7381 21.4336C8.8404 21.4366 6.9761 20.9354 5.33672 19.9814L0.0040663 21.4336L1.45589 16.1095C0.499203 14.4729 -0.00339947 12.6115 -0.000229236 10.7168C-0.000229236 4.7979 4.80732 0 10.7381 0ZM7.07848 5.67989L6.86371 5.68847C6.72467 5.69692 6.58879 5.73337 6.46425 5.79564C6.34776 5.86147 6.24142 5.94377 6.14854 6.03998C6.01968 6.16108 5.94666 6.2661 5.86827 6.36791C5.47108 6.88329 5.25723 7.51602 5.26048 8.16619C5.26263 8.69131 5.40008 9.2025 5.61484 9.68047C6.05404 10.6471 6.77673 11.6706 7.7303 12.619C7.9601 12.8473 8.1856 13.0766 8.42829 13.2899C9.61314 14.331 11.0251 15.0818 12.5518 15.4825L13.1617 15.5758C13.3604 15.5865 13.5591 15.5715 13.7588 15.5618C14.0715 15.5457 14.3769 15.4612 14.6533 15.3143C14.7939 15.242 14.9312 15.1633 15.0646 15.0785C15.0646 15.0785 15.1108 15.0485 15.1988 14.9821C15.3438 14.8749 15.4329 14.7988 15.5532 14.6734C15.6423 14.5813 15.7196 14.473 15.7787 14.3498C15.8624 14.1751 15.9462 13.8418 15.9806 13.5642C16.0063 13.352 15.9988 13.2363 15.9956 13.1645C15.9913 13.0498 15.8957 12.9309 15.7916 12.8805L15.1666 12.6008C15.1666 12.6008 14.2324 12.1946 13.6611 11.9353C13.6013 11.9092 13.5372 11.8943 13.4721 11.8913C13.3986 11.8838 13.3244 11.8921 13.2544 11.9155C13.1844 11.939 13.1202 11.9772 13.0662 12.0274C13.0608 12.0253 12.9889 12.0864 12.2125 13.0252C12.1679 13.0849 12.1065 13.1301 12.0362 13.1549C11.9658 13.1797 11.8896 13.1831 11.8173 13.1645C11.7474 13.1458 11.6788 13.1221 11.6122 13.0938C11.479 13.038 11.4329 13.0166 11.3416 12.978C10.7253 12.7096 10.1547 12.347 9.65031 11.9031C9.51501 11.7852 9.38937 11.6566 9.26051 11.5323C8.83805 11.1286 8.46987 10.6718 8.1652 10.1734L8.10184 10.0716C8.05634 10.0032 8.01954 9.92942 7.99231 9.85194C7.95151 9.6944 8.05781 9.56794 8.05781 9.56794C8.05781 9.56794 8.31876 9.28288 8.4401 9.12856C8.55822 8.97852 8.65809 8.83277 8.72252 8.72882C8.84923 8.5252 8.88896 8.31622 8.82238 8.1544C8.52171 7.42137 8.2103 6.69156 7.8903 5.9671C7.82694 5.8235 7.63902 5.72062 7.46828 5.70026C7.41029 5.69383 7.35231 5.6874 7.29432 5.68311C7.15011 5.67596 7.0056 5.67739 6.86156 5.6874L7.0774 5.67882L7.07848 5.67989Z" fill="#BAE9F1"/>
+                                            </svg>    
+                                        </label>                            
+                                    </div>
+                                    <div class="calculator__form-radio-item">
+                                        <input type="radio" id="calcFormTeleg" name="contact">
+                                        <label class="btn-circle" for="calcFormTeleg">
+                                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.0268 0.123562L1.00258 7.77745C-0.29574 8.32152 -0.288229 9.07717 0.764379 9.41413L5.64865 11.0038L16.9494 3.56485C17.4838 3.22564 17.972 3.40812 17.5707 3.77979L8.41484 12.4009H8.41269L8.41484 12.402L8.07792 17.6546C8.57149 17.6546 8.78931 17.4184 9.06614 17.1397L11.4385 14.7328L16.3732 18.5357C17.2831 19.0585 17.9366 18.7898 18.163 17.6569L21.4024 1.7289C21.7339 0.341861 20.8948 -0.286168 20.0268 0.123562Z" fill="#BAE9F1"/>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="calculator__form-btn btn" type="submit">
+                                <span>Получить стратегию</span>
+                            </button>
+                            <div class="calculator__form-checkbox">
+                                <input type="checkbox" id="calcFormPolitic" required>
+                                <label for="calcFormPolitic">Я согласен(-на) с политикой конфиденциальности</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="team">
         <div class="container">
             <div class="row">
@@ -603,79 +676,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section class="calculator">
-        <div class="container">
-            <div class="row calculator__row">
-                <div class="calculator__col calculator__col--left">
-                    <div class="calculator__title section-title">
-                        Рассчитайте годовую доходность <br/>
-                        и мы предложим лучшую стратегию инвестирования
-                    </div>
-                </div>
-                <div class="calculator__col calculator__col--right">
-                    <form class="calculator__form">
-                        <div class="calculator__content">
-                            <div class="calculator__form-title">
-                                Введите сумму инвестиций:
-                            </div>
-                            <div class="calculator__form-range">
-                                <div class="calculator__form-range-input" id="calcFormRange"></div>
-                                <div class="calculator__form-range-label">
-                                    <div class="calculator__form-rang-min">1 млн.</div>
-                                    <div class="calculator__form-rang-max">30 млн.</div>
-                                </div>
-                            </div>
-                            <div class="calculator__form-value-items">
-                                <div class="calculator__form-value-item">
-                                    <div class="calculator__form-value-label">Вы получите:</div>
-                                    <div class="calculator__form-value-res" id="calcFormRes1">
-                                        3 250 000 руб.
-                                    </div>
-                                </div>
-                                <div class="calculator__form-value-item">
-                                    <div class="calculator__form-value-label">Чистая прибыль:</div>
-                                    <div class="calculator__form-value-res" id="calcFormRes2">
-                                        1 250 000 руб.
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="text" placeholder="Введите ваш телефон" class="calculator__form-input">
-                            <div class="calculator__form-radio">
-                                <div class="calculator__form-radio-label">
-                                    Куда отправить стратегию?
-                                </div>
-                                <div class="calculator__form-radio-items">
-                                    <div class="calculator__form-radio-item ">
-                                        <input type="radio" id="calcFormWhats" name="contact">
-                                        <label class="btn-circle" for="calcFormWhats">
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.7381 0C16.6689 0 21.4764 4.7979 21.4764 10.7168C21.4764 16.6357 16.6689 21.4336 10.7381 21.4336C8.8404 21.4366 6.9761 20.9354 5.33672 19.9814L0.0040663 21.4336L1.45589 16.1095C0.499203 14.4729 -0.00339947 12.6115 -0.000229236 10.7168C-0.000229236 4.7979 4.80732 0 10.7381 0ZM7.07848 5.67989L6.86371 5.68847C6.72467 5.69692 6.58879 5.73337 6.46425 5.79564C6.34776 5.86147 6.24142 5.94377 6.14854 6.03998C6.01968 6.16108 5.94666 6.2661 5.86827 6.36791C5.47108 6.88329 5.25723 7.51602 5.26048 8.16619C5.26263 8.69131 5.40008 9.2025 5.61484 9.68047C6.05404 10.6471 6.77673 11.6706 7.7303 12.619C7.9601 12.8473 8.1856 13.0766 8.42829 13.2899C9.61314 14.331 11.0251 15.0818 12.5518 15.4825L13.1617 15.5758C13.3604 15.5865 13.5591 15.5715 13.7588 15.5618C14.0715 15.5457 14.3769 15.4612 14.6533 15.3143C14.7939 15.242 14.9312 15.1633 15.0646 15.0785C15.0646 15.0785 15.1108 15.0485 15.1988 14.9821C15.3438 14.8749 15.4329 14.7988 15.5532 14.6734C15.6423 14.5813 15.7196 14.473 15.7787 14.3498C15.8624 14.1751 15.9462 13.8418 15.9806 13.5642C16.0063 13.352 15.9988 13.2363 15.9956 13.1645C15.9913 13.0498 15.8957 12.9309 15.7916 12.8805L15.1666 12.6008C15.1666 12.6008 14.2324 12.1946 13.6611 11.9353C13.6013 11.9092 13.5372 11.8943 13.4721 11.8913C13.3986 11.8838 13.3244 11.8921 13.2544 11.9155C13.1844 11.939 13.1202 11.9772 13.0662 12.0274C13.0608 12.0253 12.9889 12.0864 12.2125 13.0252C12.1679 13.0849 12.1065 13.1301 12.0362 13.1549C11.9658 13.1797 11.8896 13.1831 11.8173 13.1645C11.7474 13.1458 11.6788 13.1221 11.6122 13.0938C11.479 13.038 11.4329 13.0166 11.3416 12.978C10.7253 12.7096 10.1547 12.347 9.65031 11.9031C9.51501 11.7852 9.38937 11.6566 9.26051 11.5323C8.83805 11.1286 8.46987 10.6718 8.1652 10.1734L8.10184 10.0716C8.05634 10.0032 8.01954 9.92942 7.99231 9.85194C7.95151 9.6944 8.05781 9.56794 8.05781 9.56794C8.05781 9.56794 8.31876 9.28288 8.4401 9.12856C8.55822 8.97852 8.65809 8.83277 8.72252 8.72882C8.84923 8.5252 8.88896 8.31622 8.82238 8.1544C8.52171 7.42137 8.2103 6.69156 7.8903 5.9671C7.82694 5.8235 7.63902 5.72062 7.46828 5.70026C7.41029 5.69383 7.35231 5.6874 7.29432 5.68311C7.15011 5.67596 7.0056 5.67739 6.86156 5.6874L7.0774 5.67882L7.07848 5.67989Z" fill="#BAE9F1"/>
-                                            </svg>    
-                                        </label>                            
-                                    </div>
-                                    <div class="calculator__form-radio-item">
-                                        <input type="radio" id="calcFormTeleg" name="contact">
-                                        <label class="btn-circle" for="calcFormTeleg">
-                                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20.0268 0.123562L1.00258 7.77745C-0.29574 8.32152 -0.288229 9.07717 0.764379 9.41413L5.64865 11.0038L16.9494 3.56485C17.4838 3.22564 17.972 3.40812 17.5707 3.77979L8.41484 12.4009H8.41269L8.41484 12.402L8.07792 17.6546C8.57149 17.6546 8.78931 17.4184 9.06614 17.1397L11.4385 14.7328L16.3732 18.5357C17.2831 19.0585 17.9366 18.7898 18.163 17.6569L21.4024 1.7289C21.7339 0.341861 20.8948 -0.286168 20.0268 0.123562Z" fill="#BAE9F1"/>
-                                            </svg>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="calculator__form-btn btn" type="submit">
-                                Получить стратегию
-                            </button>
-                            <div class="calculator__form-checkbox">
-                                <input type="checkbox" id="calcFormPolitic">
-                                <label for="calcFormPolitic">Я согласен(-на) с политикой конфиденциальности</label>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>

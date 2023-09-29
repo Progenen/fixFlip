@@ -22,12 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function calculator(value) {
-        const val = value[0].replace(/\./g, '');
-        console.log(val);
-        const calcRes2 = ((val / 100) * 30) + val;
-        // const calcRes1 = val  - calcRes2;
+        const val = Number(value[0].replace(/\./g, ''));
+        const calcRes2 = ((val / 100) * 30);
+        const calcRes1 = calcRes2 + val;
 
-        // document.querySelector("#calcFormRes1").textContent = calcRes1.toLocaleString("ru-RU");
+        document.querySelector("#calcFormRes1").textContent = calcRes1.toLocaleString("ru-RU");
         document.querySelector("#calcFormRes2").textContent = calcRes2.toLocaleString("ru-RU");
     }
 
@@ -54,33 +53,33 @@ document.addEventListener('DOMContentLoaded', function () {
         calculator(values)
     })
 
-    // burgerOpen.addEventListener("click", () => {
-    //     burger.classList.add("active");
-    //     modalWrapper.classList.add("active");
-    //     setTimeout(() => {
-    //         menu.classList.add("active");
-    //     }, 500)
-    //     document.body.classList.add("lock");
+    burgerOpen.addEventListener("click", () => {
+        burger.classList.add("active");
+        modalWrapper.classList.add("active");
+        setTimeout(() => {
+            menu.classList.add("active");
+        }, 500)
+        document.body.classList.add("lock");
 
-    // })
+    })
 
-    // burgerClose.addEventListener("click", () => {
-    //     burger.classList.remove("active");
-    //     modalWrapper.classList.remove("active");
-    //     setTimeout(() => {
-    //         menu.classList.remove("active");
-    //     }, 500)
-    //     document.body.classList.remove("lock");
-    // })
+    burgerClose.addEventListener("click", () => {
+        burger.classList.remove("active");
+        modalWrapper.classList.remove("active");
+        setTimeout(() => {
+            menu.classList.remove("active");
+        }, 500)
+        document.body.classList.remove("lock");
+    })
 
-    // if (window.innerWidth <= 576) {
-    //     const headerPhone = document.querySelector(".header__phone");
-    //     const menuContacts = document.querySelector(".mobile-menu__contacts");
+    if (window.innerWidth <= 576) {
+        const headerPhone = document.querySelector(".header__phone");
+        const menuContacts = document.querySelector(".mobile-menu__contacts");
 
-    //     menuContacts.append(headerPhone);
-    // }
+        menuContacts.append(headerPhone);
+    }
 
-    // document.querySelector(".offer").style.paddingTop = header.clientHeight + "px";
+    document.querySelector(".offer").style.paddingTop = header.clientHeight + "px";
 
     if (window.innerWidth <= 876) {
         const cardsSection =  document.createElement("section");
