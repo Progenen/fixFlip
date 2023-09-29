@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalWrapper = document.querySelector(".modal-wrapper");
     const menu = document.querySelector(".mobile-menu");
     const header = document.querySelector("header");
+    const range = document.querySelector("#calcFormRange");
     
     function insertAfter(newNode, existingNode) {
         console.log(existingNode.parentNode.children.length);
@@ -20,15 +21,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    noUiSlider.create(document.querySelector("#calcFormRange"), {
-        start: [1000000],
+    function calculator(value) {
+        const val = value[0].replace(/\./g, '');
+        console.log(val);
+        const calcRes2 = ((val / 100) * 30) + val;
+        // const calcRes1 = val  - calcRes2;
+
+        // document.querySelector("#calcFormRes1").textContent = calcRes1.toLocaleString("ru-RU");
+        document.querySelector("#calcFormRes2").textContent = calcRes2.toLocaleString("ru-RU");
+    }
+
+    const calcRange = noUiSlider.create(range, {
+        start: [0],
         connect: true,
         tooltips: true,
         range: {
             'min': 1000000,
             'max': 30000000
         },
-        step: 1,
+        step: 250000,
         format: {
             to: (value) => {
                 return value.toLocaleString('de-DE');
@@ -38,6 +49,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+
+    range.noUiSlider.on("update", (values) => {
+        calculator(values)
+    })
 
     // burgerOpen.addEventListener("click", () => {
     //     burger.classList.add("active");
