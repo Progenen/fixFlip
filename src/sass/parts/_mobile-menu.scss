@@ -52,6 +52,30 @@
     &__contacts {
         margin-top: auto;
     }
+
+    &__social {
+        margin-top: 10px;
+    }
+
+    &__social-list {
+        display: flex;
+    }
+
+    &__social-item {
+        margin-bottom: 0;
+        margin-right: 4.8px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__social-link {
+        width: 41px;
+        height: 41px;
+        svg {
+            width: 47%;
+        }
+    }
 }
 
 .burger-close {

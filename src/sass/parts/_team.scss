@@ -9,7 +9,7 @@
     &::after {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
         width: 100%;
         height: 487px;
         background-image: url('../images/graphics/team-shadow.png');
@@ -57,10 +57,10 @@
     &__persons {
         display: flex;
         position: relative;
-        margin-top: 50.5px;
+        margin-top: 118px;
         img {
             z-index: 1;
-            left: 0;
+            margin-left: 4px;
         }
     }
 
@@ -69,43 +69,43 @@
         width: 132px;
         z-index: 6;
         &--1 {
-            top: 55px;
-            left: 93px;
+            top: -15px;
+            left: -32px;
         }
 
         &--2 {
-            top: 42px;
-            left: 295px;
+            top: -28px;
+            left: 170px;
         }
 
         &--3 {
-            top: 76px;
-            left: 451px;
+            top: 7px;
+            left: 326px;
         }
 
         &--4 {
-            top: 14px;
-            left: 602px;
+            top: -56px;
+            left: 477px;
         }
 
         &--5 {
-            top: 52px;
-            left: 757px;
+            top: -18px;
+            left: 633px;        
         }
 
         &--6 {
-            top: 52px;
-            left: 907px;
+            top: -19px;
+            left: 782px;
         }
 
         &--7 {
-            top: 39px;
-            left: 1111px;
+            top: -31px;
+            left: 987px;
         }
 
         &--8 {
-            top: 579px;
-            left: 527px;
+            top: 509px;
+            left: 403px;        
         }
     }
 

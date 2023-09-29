@@ -268,8 +268,7 @@
     &__form-checkbox {
         margin-top: 14px;
         input {
-            position: relative;
-            opacity: 0;
+            display: none;
         }
         input + label {
             position: relative;

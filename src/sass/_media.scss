@@ -181,7 +181,7 @@
         }
 
         &__persons {
-            margin-top: -30px;
+            margin-top: 30px;
             img {
                 position: relative;
                 width: 100%;
@@ -845,7 +845,7 @@
 
     .calculator {
         &__form {
-            padding: 30px;
+            padding: 30px 25px;
         }
 
         &__form-rang-max {
@@ -911,6 +911,9 @@
     }
 
     .models {
+        background-image: url("../images/graphics/models-bg-mob.jpg");
+        background-size: 100% 100%; 
+        padding: 20px 0;
         &__item {
             padding: 32px 120px 32px 32px;
             min-width: 0%;
@@ -935,6 +938,7 @@
     }
 
     .liquid {
+        padding: 30px 0 20px;
         &__employee-quote {
             padding-left: 16px;
             padding-right: 18px;
@@ -1027,12 +1031,36 @@
         }
     }
 
+    .liquid {
+        background-image: url('../images/graphics/liquid-bg-mob.jpg');
+        background-position: center;
+        &::after {
+            background-image: url('../images/graphics/liquid-shadow-mob.png');
+            height: 301px;
+            bottom: 60px;
+        }
+        &__img::after {
+            bottom: 15px;
+            display: none;
+        }
+    }
+
+    .process {
+        background-image: url('../images/graphics/process-bg-mob.jpg');
+        background-position: top center;
+    }
+
+    .calculator {
+        background-image: url('../images/graphics/calculator-bg-mob.jpg');
+    }
+
     .team {
+        background-image: url('../images/graphics/team-bg-mob.jpg');
         &::after {
             bottom: -30px;
         }
         &__persons {
-            margin-top: 0;
+            margin-top: 30px;
         }
 
         &__title {
@@ -1041,7 +1069,7 @@
 
         &__card {
             max-width: 301px;
-            margin-bottom: 261px;
+            margin-bottom: 0;
         }
 
         &__card-img {
@@ -1060,11 +1088,6 @@
         }
 
         &__persons {
-            position: absolute;
-            bottom: 0;
-            width: 426px;
-            left: 50%;
-            transform: translateX(-50%);
             img {
             }
         }
@@ -1073,6 +1096,39 @@
     .questions {
         &__card-text br{
             content: "";
+        }
+    }
+
+    .calculator {
+        &__title {
+            max-width: 306px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__form-checkbox input + label {
+            font-size: 10px;
+            align-items: center;
+            br {
+                content: "";
+            }
+            &::before {
+                min-width: 15px;
+                min-height: 15px;
+                width: 15px;
+                height: 15px;
+                background-position: 4px 5px;
+                margin-right: 7px;
+            }
+        }
+
+        &__form-input {
+            max-width: 100%;
+        }
+
+        &__form-btn {
+            max-width: 100%;
+            width: 100%;
         }
     }
 

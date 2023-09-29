@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const headerPhone = document.querySelector(".header__phone");
         const menuContacts = document.querySelector(".mobile-menu__contacts");
 
-        menuContacts.append(headerPhone);
+        menuContacts.prepend(headerPhone);
     }
 
     document.querySelector(".offer").style.paddingTop = header.clientHeight + "px";
