@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zlatmax | Development Version</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="content">
-            <header class="header">
+            <!-- <header class="header">
                 <div class="container">
                     <div class="header__row row">
                         <div class="header__col header__col--left">
@@ -40,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-            </header>
+            </header> -->
 <main>
     <div class="navigate">
         <ul class="navigate__list">
@@ -74,7 +77,7 @@
             </li>
         </ul>
     </div>
-    <section class="offer">
+    <!-- <section class="offer">
         <div class="container">
             <div class="offer__absolute">
                 <div class="offer__titles">
@@ -648,39 +651,188 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <section class="calculator">
+        <div class="container">
+            <div class="row calculator__row">
+                <div class="calculator__col calculator__col--left">
+                    <div class="calculator__title section-title">
+                        Рассчитайте годовую доходность <br/>
+                        и мы предложим лучшую стратегию инвестирования
+                    </div>
+                </div>
+                <div class="calculator__col calculator__col--right">
+                    <form class="calculator__form">
+                        <div class="calculator__content">
+                            <div class="calculator__form-title">
+                                Введите сумму инвестиций:
+                            </div>
+                            <div class="calculator__form-range">
+                                <div class="calculator__form-range-input" id="calcFormRange"></div>
+                                <div class="calculator__form-range-label">
+                                    <div class="calculator__form-rang-min">1 млн.</div>
+                                    <div class="calculator__form-rang-max">30 млн.</div>
+                                </div>
+                            </div>
+                            <div class="calculator__form-value-items">
+                                <div class="calculator__form-value-item">
+                                    <div class="calculator__form-value-label">Вы получите:</div>
+                                    <div class="calculator__form-value-res">
+                                        3 250 000 руб.
+                                    </div>
+                                </div>
+                                <div class="calculator__form-value-item">
+                                    <div class="calculator__form-value-label">Чистая прибыль:</div>
+                                    <div class="calculator__form-value-res">
+                                        1 250 000 руб.
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Введите ваш телефон" class="calculator__form-input">
+                            <div class="calculator__form-radio">
+                                <div class="calculator__form-radio-label">
+                                    Куда отправить стратегию?
+                                </div>
+                                <div class="calculator__form-radio-items">
+                                    <div class="calculator__form-radio-item ">
+                                        <input type="radio" id="calcFormWhats" name="contact">
+                                        <label class="btn-circle" for="calcFormWhats">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.7381 0C16.6689 0 21.4764 4.7979 21.4764 10.7168C21.4764 16.6357 16.6689 21.4336 10.7381 21.4336C8.8404 21.4366 6.9761 20.9354 5.33672 19.9814L0.0040663 21.4336L1.45589 16.1095C0.499203 14.4729 -0.00339947 12.6115 -0.000229236 10.7168C-0.000229236 4.7979 4.80732 0 10.7381 0ZM7.07848 5.67989L6.86371 5.68847C6.72467 5.69692 6.58879 5.73337 6.46425 5.79564C6.34776 5.86147 6.24142 5.94377 6.14854 6.03998C6.01968 6.16108 5.94666 6.2661 5.86827 6.36791C5.47108 6.88329 5.25723 7.51602 5.26048 8.16619C5.26263 8.69131 5.40008 9.2025 5.61484 9.68047C6.05404 10.6471 6.77673 11.6706 7.7303 12.619C7.9601 12.8473 8.1856 13.0766 8.42829 13.2899C9.61314 14.331 11.0251 15.0818 12.5518 15.4825L13.1617 15.5758C13.3604 15.5865 13.5591 15.5715 13.7588 15.5618C14.0715 15.5457 14.3769 15.4612 14.6533 15.3143C14.7939 15.242 14.9312 15.1633 15.0646 15.0785C15.0646 15.0785 15.1108 15.0485 15.1988 14.9821C15.3438 14.8749 15.4329 14.7988 15.5532 14.6734C15.6423 14.5813 15.7196 14.473 15.7787 14.3498C15.8624 14.1751 15.9462 13.8418 15.9806 13.5642C16.0063 13.352 15.9988 13.2363 15.9956 13.1645C15.9913 13.0498 15.8957 12.9309 15.7916 12.8805L15.1666 12.6008C15.1666 12.6008 14.2324 12.1946 13.6611 11.9353C13.6013 11.9092 13.5372 11.8943 13.4721 11.8913C13.3986 11.8838 13.3244 11.8921 13.2544 11.9155C13.1844 11.939 13.1202 11.9772 13.0662 12.0274C13.0608 12.0253 12.9889 12.0864 12.2125 13.0252C12.1679 13.0849 12.1065 13.1301 12.0362 13.1549C11.9658 13.1797 11.8896 13.1831 11.8173 13.1645C11.7474 13.1458 11.6788 13.1221 11.6122 13.0938C11.479 13.038 11.4329 13.0166 11.3416 12.978C10.7253 12.7096 10.1547 12.347 9.65031 11.9031C9.51501 11.7852 9.38937 11.6566 9.26051 11.5323C8.83805 11.1286 8.46987 10.6718 8.1652 10.1734L8.10184 10.0716C8.05634 10.0032 8.01954 9.92942 7.99231 9.85194C7.95151 9.6944 8.05781 9.56794 8.05781 9.56794C8.05781 9.56794 8.31876 9.28288 8.4401 9.12856C8.55822 8.97852 8.65809 8.83277 8.72252 8.72882C8.84923 8.5252 8.88896 8.31622 8.82238 8.1544C8.52171 7.42137 8.2103 6.69156 7.8903 5.9671C7.82694 5.8235 7.63902 5.72062 7.46828 5.70026C7.41029 5.69383 7.35231 5.6874 7.29432 5.68311C7.15011 5.67596 7.0056 5.67739 6.86156 5.6874L7.0774 5.67882L7.07848 5.67989Z" fill="#BAE9F1"/>
+                                            </svg>    
+                                        </label>                            
+                                    </div>
+                                    <div class="calculator__form-radio-item">
+                                        <input type="radio" id="calcFormTeleg" name="contact">
+                                        <label class="btn-circle" for="calcFormTeleg">
+                                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.0268 0.123562L1.00258 7.77745C-0.29574 8.32152 -0.288229 9.07717 0.764379 9.41413L5.64865 11.0038L16.9494 3.56485C17.4838 3.22564 17.972 3.40812 17.5707 3.77979L8.41484 12.4009H8.41269L8.41484 12.402L8.07792 17.6546C8.57149 17.6546 8.78931 17.4184 9.06614 17.1397L11.4385 14.7328L16.3732 18.5357C17.2831 19.0585 17.9366 18.7898 18.163 17.6569L21.4024 1.7289C21.7339 0.341861 20.8948 -0.286168 20.0268 0.123562Z" fill="#BAE9F1"/>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="calculator__form-btn btn" type="submit">
+                                Получить стратегию
+                            </button>
+                            <div class="calculator__form-checkbox">
+                                <input type="checkbox" id="calcFormPolitic">
+                                <label for="calcFormPolitic">Я согласен(-на) с политикой конфиденциальности</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 </div>
-<!-- <footer class="footer">
+<footer class="footer">
     <div class="container">
         <div class="row footer__top">
             <div class="footer__title section-title">
                 Находимся в центре Пскова
             </div>
+        </div>
+        <div class="row">
             <address class="footer__address">
                 Наш адрес: Псков, Гоголя, 14
             </address>
         </div>
-        <div class="row">
+        <div class="row footer__midle">
             <div class="footer__col footer__col--map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255967.35546800224!2d30.580788917900485!3d59.91977987816683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2skz!4v1695849170737!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="footer__col footer__col--slider">
-                <div class="footer__slider">
-                    <div class="footer__slider-wrapper">
-                        <div class="footer__slider-slide">
-
+                <div class="footer__slider swiper">
+                    <div class="footer__slider-wrapper swiper-wrapper">
+                        <div class="footer__slider-slide swiper-slide">
+                            <img src="images/graphics/slide.png" alt="">
                         </div>
+                        <div class="footer__slider-slide swiper-slide">
+                            <img src="images/graphics/slide.png" alt="">
+                        </div>
+                        <div class="footer__slider-slide swiper-slide">
+                            <img src="images/graphics/slide.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer__slider-arrow footer__slider-arrow--left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                            <path d="M7.3266 6.75892L7.32664 6.75897C7.59092 7.03206 7.59092 7.47324 7.32664 7.74633L1.85779 13.3975C1.72109 13.5387 1.54352 13.6076 1.36407 13.6076C1.18458 13.6076 1.00544 13.5347 0.87262 13.3975C0.608339 13.1244 0.608339 12.6832 0.87262 12.4101L5.86372 7.25265L0.94848 2.17357C0.6842 1.90048 0.6842 1.4593 0.94848 1.18621C1.21809 0.907619 1.66168 0.907604 1.93131 1.18617C1.93132 1.18618 1.93134 1.1862 1.93135 1.18621L7.3266 6.75892Z" fill="white" stroke="white" stroke-width="0.6"/>
+                        </svg>
+                    </div>
+                    <div class="footer__slider-arrow footer__slider-arrow--right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                            <path d="M7.3266 6.75892L7.32664 6.75897C7.59092 7.03206 7.59092 7.47324 7.32664 7.74633L1.85779 13.3975C1.72109 13.5387 1.54352 13.6076 1.36407 13.6076C1.18458 13.6076 1.00544 13.5347 0.87262 13.3975C0.608339 13.1244 0.608339 12.6832 0.87262 12.4101L5.86372 7.25265L0.94848 2.17357C0.6842 1.90048 0.6842 1.4593 0.94848 1.18621C1.21809 0.907619 1.66168 0.907604 1.93131 1.18617C1.93132 1.18618 1.93134 1.1862 1.93135 1.18621L7.3266 6.75892Z" fill="white" stroke="white" stroke-width="0.6"/>
+                        </svg>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row footer__bottom">
-            <div class="footer__col--logo"></div>
-            <div class="footer__col--contacts"></div>
+            <div class="footer__col footer__col--logo">
+                <a href="#" class="footer__logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="footer__col footer__col--links">
+                <ul class="footer__links">
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-link">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__links-link">
+                            Разработчик
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--social">
+                <div class="footer__social">
+                    <ul class="footer__social-list navigate__list">
+                        <li class="footer__social-item navigate__item">
+                            <a href="#" class="footer__social-link navigate__link btn-circle">
+                                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.4 13L17.147 9.1L10.4 5.2V13ZM25.428 2.821C25.597 3.432 25.714 4.251 25.792 5.291C25.883 6.331 25.922 7.228 25.922 8.008L26 9.1C26 11.947 25.792 14.04 25.428 15.379C25.103 16.549 24.349 17.303 23.179 17.628C22.568 17.797 21.45 17.914 19.734 17.992C18.044 18.083 16.497 18.122 15.067 18.122L13 18.2C7.553 18.2 4.16 17.992 2.821 17.628C1.651 17.303 0.897 16.549 0.572 15.379C0.403 14.768 0.286 13.949 0.208 12.909C0.117 11.869 0.0779999 10.972 0.0779999 10.192L0 9.1C0 6.253 0.208 4.16 0.572 2.821C0.897 1.651 1.651 0.897 2.821 0.572C3.432 0.403 4.55 0.286 6.266 0.208C7.956 0.117 9.503 0.0779999 10.933 0.0779999L13 0C18.447 0 21.84 0.208 23.179 0.572C24.349 0.897 25.103 1.651 25.428 2.821Z" fill="#BAE9F1"/>
+                                </svg>                                    
+                            </a>
+                        </li>
+                        <li class="footer__social-item navigate__item">
+                            <a href="#" class="footer__social-link navigate__link btn-circle">
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.4994 7.49609C9.51486 7.49609 8.57061 7.88721 7.87442 8.58341C7.17823 9.2796 6.78711 10.2238 6.78711 11.2084C6.78711 12.193 7.17823 13.1372 7.87442 13.8334C8.57061 14.5296 9.51486 14.9207 10.4994 14.9207C11.484 14.9207 12.4282 14.5296 13.1244 13.8334C13.8206 13.1372 14.2117 12.193 14.2117 11.2084C14.2117 10.2238 13.8206 9.2796 13.1244 8.58341C12.4282 7.88721 11.484 7.49609 10.4994 7.49609Z" fill="#BAE9F1"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.52583 1.02149C8.49631 0.581379 12.5033 0.581379 16.4738 1.02149C18.6429 1.26364 20.3917 2.97131 20.6464 5.14844C21.1173 9.17447 21.1173 13.2417 20.6464 17.2677C20.3917 19.4448 18.6429 21.1525 16.4749 21.3958C12.504 21.836 8.49669 21.836 4.52583 21.3958C2.35669 21.1525 0.60791 19.4448 0.353188 17.2689C-0.117729 13.2424 -0.117729 9.17485 0.353188 5.14844C0.60791 2.97131 2.35669 1.26364 4.52583 1.02149ZM16.211 4.35457C15.9081 4.35457 15.6176 4.47492 15.4034 4.68913C15.1891 4.90334 15.0688 5.19388 15.0688 5.49682C15.0688 5.79977 15.1891 6.0903 15.4034 6.30452C15.6176 6.51873 15.9081 6.63907 16.211 6.63907C16.514 6.63907 16.8045 6.51873 17.0187 6.30452C17.233 6.0903 17.3533 5.79977 17.3533 5.49682C17.3533 5.19388 17.233 4.90334 17.0187 4.68913C16.8045 4.47492 16.514 4.35457 16.211 4.35457ZM5.07411 11.2081C5.07411 9.76909 5.64574 8.38905 6.66326 7.37153C7.68077 6.35402 9.06081 5.78239 10.4998 5.78239C11.9388 5.78239 13.3188 6.35402 14.3363 7.37153C15.3538 8.38905 15.9255 9.76909 15.9255 11.2081C15.9255 12.6471 15.3538 14.0271 14.3363 15.0446C13.3188 16.0621 11.9388 16.6338 10.4998 16.6338C9.06081 16.6338 7.68077 16.0621 6.66326 15.0446C5.64574 14.0271 5.07411 12.6471 5.07411 11.2081Z" fill="#BAE9F1"/>
+                                </svg>                                                                                                        
+                            </a>
+                        </li>
+                        <li class="footer__social-item navigate__item navigate__item--2">
+                            <a href="#" class="footer__social-link navigate__link btn-circle">
+                                <svg>
+                                    <use xlink:href='svg/dest/stack/sprite.svg#whatsapp'></use>
+                                </svg>                               
+                            </a>
+                        </li>
+                        <li class="footer__social-item navigate__item navigate__item--1">
+                            <a href="#" class="footer__social-link navigate__link btn-circle">
+                                <svg>
+                                    <use xlink:href='svg/dest/stack/sprite.svg#telegramm'></use>
+                                </svg>    
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__col footer__col--contacts">
+                <div class="footer__contacts contacts">
+                    <a href="tel:+79876543210" class="footer__phone contacts__phone">8 (987) 654-32-10</a>
+                    <a href="#" class="footer__call contacts__call">заказать звонок</a>
+                </div>
+            </div>
         </div>
     </div>
-</footer> -->
+</footer>
 </div>
 
 <div class="modal-wrapper">

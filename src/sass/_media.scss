@@ -154,6 +154,24 @@
             margin-right: auto;
         }
     }
+
+    .footer {
+        &__col {
+
+            &--logo {
+                width: 23%;
+                margin-right: 10px;
+            }
+
+            &--links {
+                width: 27%;
+            }
+
+            &--contacts {
+                width: 29%;
+            }
+        }
+    }
 }
 
 @media (max-width:1255px){
@@ -309,6 +327,91 @@
 
         &__text {
             font-size: 18px;
+        }
+    }
+
+    .footer {
+        text-align: center;
+        .row {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__col {
+            width: 100%;
+            max-width: 329px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &--map, &--slider {
+                height: 201px;
+                margin: 10px 0 0 0;
+            }
+        }
+
+        &__logo {
+            max-width: 154px;
+            width: 100%;
+            margin-bottom: 7px;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        &__social-link svg {
+            width: 50%;
+        }
+
+        &__links {
+            width: 100%;
+        }
+
+        &__links-link {
+            font-size: 11px;
+        }
+
+        &__social {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        &__social-list {
+            justify-content: center;
+            width: 100%;
+        }
+
+        &__contacts {
+            align-items: center;
+        }
+
+        &__phone {
+            font-size: 13px;
+        }
+
+        &__call {
+            font-size: 11px;
+        }
+
+        &__slider-arrow {
+            width: 27px;
+            height: 27px;
+            svg {
+                height: 9.02px;
+                width: 4.69px;
+            }
+            &--left {
+                left: 10px;
+            }
+
+            &--right {
+                right: 10px;
+            }
         }
     }
 }
@@ -548,6 +651,20 @@
 
         &__steps {
             margin-top: 24px;
+        }
+    }
+
+    .footer {
+        background-image: url('../images/graphics/footer-bg-mob.jpg');
+        background-position: center top;
+        padding: 30px 0;
+        &__title {
+            max-width: 229px;
+        }
+
+        &__address {
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
     }
 

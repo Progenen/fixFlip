@@ -1,0 +1,283 @@
+.calculator {
+    padding: 76px 0 35px;
+    &__row {
+    }
+
+    &__col {
+        &--left {
+            width: 57.5%;
+        }
+
+        &--right {
+            width: 42.5%;
+        }
+    }
+
+    &__title {
+    }
+
+    &__form {
+        position: relative;
+        padding: 50px 68px;
+        max-width: 474px;
+        width: 100%;
+        z-index: 1;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: 0;
+            left: 0;
+            border-radius: 10px;
+            opacity: 0.3;
+            border: 1px solid #fff;
+            background: linear-gradient(123deg, rgba(19, 91, 96, 0.8) 4.49%, rgba(30, 85, 109, 0.8) 120.49%), #fff;
+            backdrop-filter: blur(7.5px);
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__form-title {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 20.8px */
+        margin-bottom: 20px;
+    }
+
+    &__form-range {
+        
+    }
+
+    &__form-range-input {
+        height: 1px;
+        background: linear-gradient(107deg, #5D7E86 -43.98%, #3C6067 79.7%);
+        border: none;
+        box-shadow: none;
+        margin-top: 55px;
+        padding: 0 15.5px;
+        position: relative;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(107deg, #5D7E86 -43.98%, #3C6067 79.7%);
+            top: 0;
+        }
+        .noUi-handle {
+            border-radius: 50%;
+            width: 31px;
+            height: 31px;
+            background-color: transparent;
+            background-image: url('../images/icons/rub.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0px 1px 10px 0px rgba(227, 222, 255, 0.15) inset, 0px 4px 15px 0px #145556 inset;
+            border:none;
+            margin-top: -10.5px;
+            &:after, &::before {
+                display: none;
+            }
+        }
+
+        .noUi-tooltip {
+            border: none;
+            padding: 0;
+            background: transparent;
+            font-size: 12px;
+            font-style: normal;
+            color: rgba($color: #fff, $alpha: .5);
+            font-weight: 100;
+            margin-bottom: -3px;
+            line-height: 130%; /* 15.6px */ 
+        }
+    }
+    
+    &__form-range-label {
+        margin-top: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-style: normal;
+        color: rgba($color: #fff, $alpha: .5);
+        font-weight: 300;
+        line-height: 130%; /* 18.2px */
+    }
+
+    &__form-range-min {
+        
+    }
+
+    &__form-range-max {
+
+    }
+
+    &__form-value-items {
+        margin-bottom: 36px;
+    }
+
+    &__form-value-item {
+        margin-bottom: 26.7px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__form-value-label {
+        color: rgba($color: #fff, $alpha: 0.5);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 18.2px */
+        margin-bottom: 5.23px;
+    }
+
+    &__form-value-res {
+        font-family: Actay-Wide;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; /* 26px */
+    }
+
+    &__form-input {
+        border-radius: 15px;
+        padding: 32px;
+        max-width: 337px;
+        width: 100%;
+        border: 1.2px solid #ffffff34;
+        background: rgba(255, 255, 255, 0.06);
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff;
+        line-height: 130%; /* 20.8px */
+        backdrop-filter: blur(7.5px);
+        transition: 0.2s;
+        margin-bottom: 14px;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.35);
+            font-family: Museo-Sans;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 130%; /* 20.8px */
+        }
+        &:focus {
+            border-color: #ffffff80;
+            outline: none;
+        }
+    }
+
+    &__form-radio {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    &__form-radio-label {
+        max-width: 123px;
+        font-size: 16px;
+    }
+
+    &__form-radio-items {
+        display: flex;
+        margin-left: 25px;
+    }
+
+    &__form-radio-item {
+        position: relative;
+        cursor: pointer;
+        margin-right: 5px;
+        transition: 0.3s;
+        input {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+            visibility: hidden;
+        }
+        svg {
+            pointer-events: none;
+            position: relative;
+            z-index: -1;
+        }
+        input:checked + label {
+            background: #fff;
+            box-shadow:
+                0px 1px 10px 0px rgba(227, 222, 255, 0.15) inset,
+                0px 4px 15px 0px rgba(20, 85, 86, 0.51) inset;
+            backdrop-filter: blur(22.5px);
+            svg {
+                fill: #00b9bb;
+            }
+            svg path {
+                fill: #00b9bb;
+            }
+        }
+        label {
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background: #fff;
+                box-shadow:
+                    0px 1px 10px 0px rgba(227, 222, 255, 0.15) inset,
+                    0px 4px 15px 0px rgba(20, 85, 86, 0.51) inset;
+                backdrop-filter: blur(22.5px);
+                svg {
+                    fill: #00b9bb;
+                }
+                svg path {
+                    fill: #00b9bb;
+                }
+            }
+
+            svg {
+                transition: 0.3s;
+                fill: #bae9f1;
+            }
+        }
+    }
+
+    &__form-btn {
+    }
+
+    &__form-checkbox {
+        margin-top: 14px;
+        input {
+            position: relative;
+            opacity: 0;
+        }
+        input + label {
+            position: relative;
+            display: flex;
+            font-size: 12px;
+            font-family: Inter;
+            cursor: pointer;
+            &::before {
+                margin-right: 10px;
+                content: "";
+                display: block;
+                background-color: #fff;
+                width: 17px;
+                height: 17px;
+                border-radius: 4px;
+                background-size: 7.5px 5.5px;
+                background-repeat: no-repeat;
+                background-position: 5px 6px;
+            }
+        }
+        input:checked + label::before {
+            background-image: url("../images/icons/mark.svg");
+        }
+    }
+}

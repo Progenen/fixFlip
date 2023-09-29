@@ -1,7 +1,8 @@
 
 
 // Libs
-@import "libs/itc-slider.css";
+@import "../../node_modules/nouislider/dist/nouislider.min.css";
+@import "../../node_modules/swiper/swiper.min.css";
 
 // Main
 @import "support";
@@ -15,5 +16,6 @@
 @import "parts/process";
 @import "parts/team";
 @import "parts/questions";
+@import "parts/calculator";
 @import "footer";
 @import "media";
