@@ -1,0 +1,18 @@
+.not-found {
+    background-image: url('../images/graphics/allon-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 304px;
+    height: 100vh;
+    &__title {
+        margin-top: 203px;
+        margin-bottom: 63px;
+    }
+
+    &__btn {
+        margin: auto;
+    }
+}
+.btn {
+}

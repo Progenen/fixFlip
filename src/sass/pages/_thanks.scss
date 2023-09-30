@@ -1,0 +1,57 @@
+.thanks {
+    background-image: url('../images/graphics/allon-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    padding-bottom: 175px;
+    &__title {
+        margin-top: 181px;
+        margin-bottom: 32px;
+    }
+
+    &__descr {
+        text-align: center;
+        font-size: 18px;
+        max-width: 434px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 65px;
+    }
+
+    &__social-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__social-item {
+        margin-right: 14px;
+    }
+
+    &__social-link {
+        width: 145px;
+        height: 145px;
+        transition: .3s;
+        svg {
+            width: 45%;
+            height: auto;
+            transition: .3s;
+        }
+        &:hover {
+            background-color: #fff;
+            svg {
+                fill: #00B9BB;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 45px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
