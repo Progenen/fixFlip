@@ -1,5 +1,3 @@
-
-import noUiSlider from "nouislider";
 import Swiper from "swiper";
 import {Navigation} from "swiper/modules";
 import header from "./components/header";

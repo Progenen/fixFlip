@@ -1,3 +1,5 @@
+import noUiSlider from 'nouislider';
+
 function calc(value) {
     const val = Number(value[0].replace(/\./g, ''));
     const calcRes2 = ((val / 100) * 30);
@@ -8,7 +10,7 @@ function calc(value) {
 }
 
 function calculator() {
-    if (document.querySelector("calcFormRange")) {
+    if (document.querySelector("#calcFormRange")) {
         const range = document.querySelector("#calcFormRange");
 
         noUiSlider.create(range, {
