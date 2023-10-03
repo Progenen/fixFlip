@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
 }
@@ -19,6 +21,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    scroll-behavior: smooth;
 }
 
 body,
@@ -146,68 +149,7 @@ footer {
 }
 
 .burger {
-    width: 42.46px;
-    height: 42.46px;
-    z-index: 1002;
-    position: relative;
-    margin-left: auto;
-    &__icon {
-        width: 60%;
-        height: 35%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 1;
-        box-sizing: content-box;
-        span {
-            width: 100%;
-            height: 2px;
-            position: relative;
-            transition: 0.3s;
-            pointer-events: none;
-
-            &::after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background-color: #bae9f1;
-                top: 0;
-                left: 0;
-                transition: 0.3s;
-            }
-        }
-    }
-
-    &.active .burger__icon {
-        z-index: 3;
-        margin-left: auto;
-        margin-right: auto;
-        span:first-child {
-            transform: translateY(6px);
-
-            &::after {
-                transform: rotateZ(45deg);
-            }
-        }
-
-        span {
-            transform: scale(0);
-
-            &::after {
-                background-color: #bae9f1;
-            }
-        }
-
-        span:last-child {
-            transform: translateY(-6px);
-
-            &::after {
-                transform: rotateZ(-45deg);
-            }
-        }
-    }
+   
 }
 
 .modal-wrapper {
@@ -230,9 +172,16 @@ footer {
 
 @keyframes flash {
     0% {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
+        -webkit-transform: translateX(-150%);
+        transform: translateX(-150%);
     }
+    25% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+
+
     100% {
         -webkit-transform: translateX(100%);
         transform: translateX(100%);
@@ -257,6 +206,7 @@ footer {
     line-height: 130%; /* 26px */
     letter-spacing: 1.2px;
     border: none;
+    transition: .2s;
     cursor: pointer;
     span {
         position: relative;
@@ -280,11 +230,23 @@ footer {
             ),
             #00b9bb;
         transition: 0s;
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        animation-delay: 2s;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        animation-name: flash;
     }
 
-    &:hover::after {
-        transition: 0.7s;
-        transform: translateX(100%);
+    &:hover {
+        background-color:#0ED4D7;
+        &::after {
+            animation-play-state: paused;
+        }
     }
 }
 
