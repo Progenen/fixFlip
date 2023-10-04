@@ -7,13 +7,58 @@ import header from "./components/header";
 import mainAdative from "./components/mainAdapitve";
 import calculator from "./components/calculator";
 import { Fancybox } from "@fancyapps/ui";
+import { map } from "jquery";
 
 
 document.addEventListener('DOMContentLoaded', function () {
 
     header();
     mainAdative();
-    calculator();
+    calculator(); 
+    if (document.querySelector("#map")) {
+        const map = document.querySelector("#map");
+
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                    center: [map.getAttribute("data-coord-a"), map.getAttribute("data-coord-b")],
+                    zoom: 16,
+                    controls: ['geolocationControl', 'zoomControl']
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+        
+                // Создаём макет содержимого.
+                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                ),
+        
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Fix Flip'
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: 'images/icons/location.svg',
+                    // Размеры метки.
+                    iconImageSize: [30, 42],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-5, -38]
+                });
+        
+            myMap.geoObjects.add(myPlacemark);
+            // myMap.controls.remove("zoomControl");
+            // myMap.controls.remove("routeButtonControl");
+            // myMap.controls.remove("trafficControl");
+            // myMap.controls.remove("typeSelector");
+            // myMap.controls.remove("fullscreenControl");
+            // myMap.controls.remove("myListBox");
+            // myMap.controls.remove("rulerControl");
+            // myMap.controls.remove("inputSearch");
+            // myMap.behaviors.disable('scrollZoom')
+        });
+    }
 
     if (document.querySelector(".footer__slider")) {
         const footerSlider = new Swiper('.footer__slider', {

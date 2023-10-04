@@ -32,7 +32,7 @@ function calculator() {
             }
         });
 
-        range.noUiSlider.on("update", (values) => {
+        range.noUiSlider.on("change", (values) => {
             calc(values)
         })
     }

@@ -240,12 +240,13 @@ footer {
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
         animation-name: flash;
+        transition: .2s;
     }
 
     &:hover {
         background-color:#0ED4D7;
         &::after {
-            animation-play-state: paused;
+            opacity: 0;
         }
     }
 }
