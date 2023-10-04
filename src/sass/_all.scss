@@ -281,6 +281,7 @@ footer {
         left: 15px;
         z-index: 2;
         transform: translateX(-100%);
+        pointer-events: none;
         background: linear-gradient(
                 100deg,
                 rgba(255, 255, 255, 0) -1.43%,
