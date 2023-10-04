@@ -23,6 +23,17 @@ function header () {
                 menu.classList.remove("active");
             }, 500)
             document.body.classList.remove("lock");
+        });
+
+        modalWrapper.addEventListener("click", (e) => {
+            if (e.target != menu) {
+                burger.classList.remove("active");
+                modalWrapper.classList.remove("active");
+                setTimeout(() => {
+                    menu.classList.remove("active");
+                }, 500)
+                document.body.classList.remove("lock");
+            }
         })
     
         if (window.innerWidth <= 576) {
