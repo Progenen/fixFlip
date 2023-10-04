@@ -62,22 +62,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        &:hover a img{
-            opacity: 1;
+        &:hover img {
             transform: rotateZ(0deg);
+            opacity: 1;
+
         }
-        a {
+        img {
             position: absolute;
-            display: block;
             right: 0;
             left: 100%;
             filter: drop-shadow(11.493607521057129px -3.448082447052002px 49.42251205444336px rgba(65, 29, 112, 0.40));
             border-radius: 11.494px;
-            img {
-                opacity: 0;
-                transition: .3s;
-                transform: rotateZ(-35deg);
-            }
+            opacity: 0;
+            transition: .3s;
+            transform: rotateZ(-45deg);
+
         }
 
         &--6 {

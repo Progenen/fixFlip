@@ -92,10 +92,17 @@
     }
 
     &__slider-slide {
-        img {
+        height: auto;
+        a {
             width: 100%;
             height: 100%;
             display: block;
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover;
+            }
         }
     }
 

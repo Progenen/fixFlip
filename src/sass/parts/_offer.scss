@@ -180,6 +180,8 @@
         border: 2px dashed #5e9ba683;
         cursor: pointer;
         transition: .3s;
+        text-decoration: none;
+        color: #fff;
         img {
             transition: .3s
         }
@@ -214,5 +216,29 @@
         background-position: center;
         z-index: 0;
         bottom: 0;
+    }
+}
+
+
+
+.sticky-titles {
+    position: fixed;
+    top: -100px;
+    height: 0;
+    z-index: 1000;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(113deg, #161A24 18.72%, #11141C 85%);
+    transition: .2s;
+    opacity: 0;
+    &__item {
+        margin-left: 0 !important;
+        margin-right: 10px !important;
+        font-size: 32px;
+    }
+    &.active {
+        height: fit-content;
+        top: -85px;
+        opacity: 1;
     }
 }

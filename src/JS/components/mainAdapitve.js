@@ -8,7 +8,14 @@ function insertAfter(newNode, existingNode) {
 }
 
 function mainAdative () {
+
+    if (window.innerWidth >= 786) {
+        document.querySelector("main").style.marginTop = "-" + document.querySelector("header").clientHeight + "px";
+    }
+    
     if (document.querySelector(".liquid") && document.querySelector(".offer")) {
+
+
         if (window.innerWidth <= 876) {
             const cardsSection =  document.createElement("section");
             const offerSection = document.querySelector(".offer");

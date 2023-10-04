@@ -97,7 +97,7 @@
             background: transparent;
             font-size: 12px;
             font-style: normal;
-            color: rgba($color: #fff, $alpha: .5);
+            color: #fff;
             font-weight: 100;
             margin-bottom: -3px;
             line-height: 130%; /* 15.6px */ 
@@ -151,15 +151,6 @@
         font-style: normal;
         font-weight: 700;
         line-height: 130%; /* 26px */
-        &::after {
-            content:" руб.";
-            font-family: Actay-Wide;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 130%; /* 26px */
-
-        }
     }
 
     &__form-input {
