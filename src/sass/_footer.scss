@@ -9,7 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 50px 0;
+    padding: 49px 0 50px; 
     &__top {
     }
 
@@ -34,6 +34,7 @@
             width: 49.15%;
             border-radius: 10px;
             overflow: hidden;
+            height: 385px;
             margin-right: 20px;
             #map {
                 width: 100%;
@@ -45,6 +46,7 @@
             border-radius: 10px;
             overflow: hidden;
             width: 49.15%;
+            height: 385px;
         }
 
         &--logo {
@@ -85,6 +87,7 @@
         display: flex;
         align-items: center;
         position: relative;
+        height: 100%;
         overflow: hidden;
     }
 

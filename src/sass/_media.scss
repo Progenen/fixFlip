@@ -822,7 +822,6 @@
         }
 
         &__titles {
-            margin-top: 18px;
             font-size: 28px;
             text-align: center;
         }
@@ -929,6 +928,58 @@
 }
 
 @media (max-width: 576px) {
+
+    .navigate {
+        &__item {
+            &--1 svg {
+                margin-top: 2px;
+                width: 17.5px;
+                height: 15px;
+                margin-right: 2px;
+            }
+
+            &--2 svg {
+                width: 18px;
+                margin-left: -1px;
+                height: 17.5px;
+                margin-top: 0;
+            }
+
+            &--3 svg, &--4 svg{
+                width: 40%;
+            }
+        }
+    }
+
+    .btn-circle {
+        width: 42px;
+        height: 42px;
+        &--youtube  svg{
+            width: 20px;
+            height: 14.2px;
+            margin-top: 1px;
+        }
+
+        &--whatsapp  svg{
+            width: 17.5px;
+            height: 17.5px;
+            margin-left: 2px;
+        }
+
+        &--telegramm  svg{
+            width:17px;
+            height: 15px;
+            margin-left: -2px;
+            margin-top: 2px;
+        }
+
+        &--insta  svg{
+            width: 17px;
+            height: 17px;
+            margin-top: -1px;
+        }
+    }
+
     .header {
         &__phone {
             font-size: 16px;
@@ -939,6 +990,7 @@
             display: none;
         }
     }
+
 
     .contacts {
         &__call {
@@ -956,7 +1008,7 @@
     }
 
     .btn {
-        border-radius: 10px;
+        border-radius: 15px;
     }
 
     .offer {
@@ -979,6 +1031,8 @@
         &__item {
             padding: 32px 120px 32px 32px;
             min-width: 0%;
+            margin-bottom: 10px;
+
         }
 
         &__item-num {
@@ -1012,9 +1066,21 @@
             }
         }
 
+        &__title {
+            margin-bottom: 32px;
+        }
+
         &__antistress-title {
             margin-top: 30px;
             font-size: 14px;
+        }
+
+        &__antistress-card {
+            max-width: 277px;
+            margin-bottom: 10px;
+            &:nth-child(2) {
+                max-width: 260px;
+            }
         }
 
         &__image {
@@ -1032,6 +1098,7 @@
 
         &__employee-label-name {
             font-size: 12px;
+            margin-bottom: 0;
         }
 
         &__employee-label-job {
@@ -1044,11 +1111,12 @@
 
         &__employee-quote {
             &::before {
-                margin-right: 9px;
+                margin-right: 6px;
             }
         }
 
         &__employee-quote-text {
+            font-weight: 500;
             max-width: 244px;
             font-size: 12px;
             line-height: 19.2px;
@@ -1064,6 +1132,7 @@
 
         &__steps-num {
             font-size: 40px;
+            margin-right: 9px;
         }
 
         &__steps-title {
@@ -1098,6 +1167,10 @@
             max-width: 277px;
             padding: 27px 10px;
             font-size: 14px;
+        }
+
+        &__social-text {
+            margin-right: 10px;
         }
 
         &__social-link {
@@ -1175,14 +1248,6 @@
             margin-bottom: 20px;
         }
 
-        &__form-radio-item label {
-            width: 42px;
-            height: 42px;
-            svg {
-                width: 45%;
-            }
-        }
-
         &__form-btn {
             border: none;
             width: 100%;
@@ -1237,6 +1302,12 @@
 
     .questions {
         padding-top: 30px;
+        margin-top: -10px;
+
+        &__card {
+            margin-bottom: 10px;
+        }
+
         &__card-text br {
             content: "";
         }

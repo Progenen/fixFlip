@@ -19,6 +19,10 @@
         z-index: 3;
     }
 
+    .container {
+        max-width: 1077px;
+    }
+
     &__row--persons {
         justify-content: center;
     }
@@ -34,14 +38,16 @@
     }
 
     &__card {
-        max-width: 560px;
+        max-width: 554px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 
     &__card-img {
+        margin-right: 20px;
+        width: 66px;
         img {
-            width: 66px;
             height: 64.5px;
         }
     }
@@ -57,10 +63,14 @@
     &__persons {
         display: flex;
         position: relative;
-        margin-top: 118px;
+        margin-top: 119px;
+        margin-left: -5px;
         img {
             z-index: 1;
             margin-left: 4px;
+            max-height: 707px;
+            object-fit: cover;
+            object-position: top center;
         }
     }
 

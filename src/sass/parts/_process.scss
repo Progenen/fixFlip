@@ -94,6 +94,9 @@
             .process__steps-item-right {
                 width: 58%;
             }
+            .process__steps-item-content {
+                padding: 8px 0 9px;
+            }
         }
     }
 
@@ -176,14 +179,14 @@
     }
 
     &__btn {
-        margin-right: 30px;
+        margin-right: 37px;
         margin-left: auto;
     }
 
     &__social {
         display: flex;
         align-items: center;
-        margin-right: 189px;
+        margin-right: 200px;
     }
 
     &__social-text {
@@ -193,6 +196,7 @@
         line-height: 130%; /* 18.2px */
         color: rgba($color: #fff, $alpha: .5);
         max-width: 111px;
+        margin-right: 5px;
         
     }
 

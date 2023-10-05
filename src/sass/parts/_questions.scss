@@ -1,5 +1,6 @@
 .questions {
-    padding: 25px 0 0;
+    padding: 0 0 0;
+    margin-top: -40px;
     overflow: hidden;
     position: relative;
     background-image: url('../images/graphics/questions-bg.jpg');
@@ -16,8 +17,13 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        z-index: 2;
+        z-index: 9;
     }
+
+    .container {
+        max-width: 1076px;
+    }
+
     &__row {
         justify-content: center;
     }
@@ -26,7 +32,7 @@
 
         &--left {
             position: relative;
-            z-index: 3;
+            z-index: 13;
             margin-top: 75px;
         }
 
@@ -76,11 +82,15 @@
     &__img {
         margin-top: 5px;
         position: relative;
+        img {
+            z-index: 9;
+            position: relative;
+        }
     }
 
     &__employee-label {
         position: absolute;
-        z-index: 3;
+        z-index: 10;
         bottom: 97px;
         left: -57px;
     }

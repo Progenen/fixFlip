@@ -155,7 +155,7 @@
 
     &__form-input {
         border-radius: 15px;
-        padding: 32px 32px 31px 28px;
+        padding: 32px 32px 28px 31px;
         max-width: 337px;
         width: 100%;
         border: 1.2px solid #ffffff34;
@@ -166,7 +166,7 @@
         line-height: 130%; /* 20.8px */
         backdrop-filter: blur(7.5px);
         transition: 0.2s;
-        margin-bottom: 21px;
+        margin-bottom: 14px;
         &::placeholder {
             color: rgba(255, 255, 255, 0.35);
             font-family: Museo-Sans;
@@ -183,7 +183,7 @@
     &__form-radio {
         display: flex;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 27px;
     }
 
     &__form-radio-label {
