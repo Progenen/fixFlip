@@ -18,6 +18,14 @@
     }
 
     &__title {
+        &.active {
+            position: fixed;
+            bottom: 0;
+        }
+        &.fixed {
+            position: fixed;
+            bottom: 0;
+          }
     }
 
     &__form {
