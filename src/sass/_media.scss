@@ -1009,6 +1009,9 @@
 
     .btn {
         border-radius: 15px;
+        &::after {
+            border-radius: 15px;
+        }
     }
 
     .offer {

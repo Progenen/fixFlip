@@ -23,7 +23,7 @@ function map () {
                     // Своё изображение иконки метки.
                     iconImageHref: 'images/myIcon.gif',
                     // Размеры метки.
-                    iconImageSize: [30, 42],
+                    iconImageSize: [39, 58],
                     // Смещение левого верхнего угла иконки относительно
                     // её "ножки" (точки привязки).
                     iconImageOffset: [-5, -38]
