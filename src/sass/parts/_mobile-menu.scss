@@ -8,7 +8,13 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
-
+    transform: translateX(-100%);
+    transition: .3s;
+    float: left;
+    &.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
     &__top {
 
     }

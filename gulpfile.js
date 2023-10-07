@@ -14,6 +14,7 @@ const gulpIf = require('gulp-if');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const webpack = require('webpack-stream');
+const pngquant = require('gulp-pngquant');
 
 const isDevelopment = process.env.NODE_ENV == 'development' ? true : false; // Check work mode | Смотрим какой режим разработки выбран
 const dir = 'dist'; // Output | Папка с конечными файлами
@@ -101,7 +102,12 @@ function startWatch() {
 function images() {
     return src('src/images/**/*')
         .pipe(newer(dir + '/images'))
-        .pipe(gulpIf(!isDevelopment, imagemin())) // Оптимизируем картинки если режим разработки prod | We optimize pictures if the prod mode
+        .pipe(gulpIf(!isDevelopment, imagemin({
+            progressive: true,
+            optimizationLevel: 10,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))) // Оптимизируем картинки если режим разработки prod | We optimize pictures if the prod mode
         .pipe(dest(dir + '/images/'))
 }
 

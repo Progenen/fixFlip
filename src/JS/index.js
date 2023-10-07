@@ -23,6 +23,8 @@ import header from "./components/header";
 import mainAdative from "./components/mainAdapitve";
 import calculator from "./components/calculator";
 import phoneMask from "./components/phoneMask";
+import animations from "./components/animations";
+import Modal from "./components/modal";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -30,6 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
     mainAdative();
     calculator();
     phoneMask();
+    animations();
+
+    const callModal = new Modal(".call", "modal-wrapper-darked", ".call-open");
+    const consultModal = new Modal(".consult", "modal-wrapper-darked", ".consult-open");
 
     if (document.querySelector("#map")) {
         const map = document.querySelector("#map");

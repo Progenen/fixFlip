@@ -20,12 +20,11 @@
     &__title {
         &.active {
             position: fixed;
-            bottom: 0;
+            bottom: 50%;
         }
-        &.fixed {
-            position: fixed;
-            bottom: 0;
-          }
+        &.active-before {
+            position: relative;
+        }
     }
 
     &__form {

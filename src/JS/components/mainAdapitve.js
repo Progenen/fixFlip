@@ -12,6 +12,12 @@ function mainAdative () {
     if (window.innerWidth >= 786) {
         document.querySelector("main").style.marginTop = "-" + document.querySelector("header").clientHeight + "px";
     }
+
+    if (window.innerWidth <= 576)  {
+        document.querySelectorAll("img[src-mob]").forEach(image => {
+            image.setAttribute("src", image.getAttribute("src-mob"));
+        })
+    }
     
     if (document.querySelector(".liquid") && document.querySelector(".offer")) {
 
